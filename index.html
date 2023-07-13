@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="./resources/ol.css">
+        <link rel="stylesheet" href="resources/fontawesome-all.min.css">
+        <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
+        <link rel="stylesheet" href="./resources/qgis2web.css">
+<style>
+.search-layer {
+  top: 65px;
+  left: .5em;
+}
+.ol-touch .search-layer {
+  top: 80px;
+}
+</style>
+        <style>
+        html, body {
+            background-color: #ffffff;
+        }
+        .ol-control button {
+            background-color: #6e6e6e !important;
+            color: #000000 !important;
+            border-radius: 0px !important;
+        }
+        .ol-zoom, .geolocate, .gcd-gl-control .ol-control {
+            background-color: rgba(255,255,255,.4) !important;
+            padding: 3px !important;
+        }
+        .ol-scale-line {
+            background: none !important;
+        }
+        .ol-scale-line-inner {
+            border: 2px solid #6e6e6e !important;
+            border-top: none !important;
+            background: rgba(255, 255, 255, 0.5) !important;
+            color: black !important;
+        }
+        </style>
+        <style>
+        #map {
+            width: 980px;
+            height: 1240px;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+            <div id="popup" class="ol-popup">
+                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                <div id="popup-content"></div>
+            </div>
+        </div>
+        <script src="resources/qgis2web_expressions.js"></script>
+        <script src="resources/polyfills.js"></script>
+        <script src="./resources/functions.js"></script>
+        <script src="./resources/ol.js"></script>
+        <script src="./resources/ol-layerswitcher.js"></script>
+        <script src="layers/Metallicalshowings_6.js"></script><script src="layers/Nonmetallicalshowings_7.js"></script><script src="layers/Claims_10.js"></script><script src="layers/Propertylimits_11.js"></script><script src="layers/DDH_Historical_trace_12.js"></script><script src="layers/DDH_2021_trace_13.js"></script><script src="layers/DDH_2022_trace_14.js"></script><script src="layers/DDHCollarHistorical_15.js"></script><script src="layers/DDHCollar20212022phase1_16.js"></script><script src="layers/DDHCollar2022phase2_17.js"></script><script src="layers/2021_DDH_Planned_20211024_18.js"></script><script src="layers/2021_DDH_Planned_20211111_19.js"></script><script src="layers/2021_DDH_Planned_20221GRAVI_20.js"></script><script src="layers/2022_DDH_Planned_20220514Phase2_21.js"></script><script src="layers/2022_DDH_Planned_20220514_22.js"></script><script src="layers/DDH_Historical_F1F2_23.js"></script><script src="layers/DDH_Historical_Composites_24.js"></script><script src="layers/DDH_2021_F1F2Mzone_25.js"></script><script src="layers/Composites_26.js"></script><script src="layers/Sulfidesintersections_27.js"></script><script src="layers/2021_DDH_Planned_20211024_28.js"></script><script src="layers/2021_DDH_Planned_20211111_29.js"></script><script src="layers/2021_DDH_Planned_20221GRAVI_30.js"></script><script src="layers/2022_DDH_Planned_20220514Phase2_31.js"></script><script src="layers/2022_DDH_Planned_20220514_32.js"></script><script src="layers/DDH_Historical_F1F2_33.js"></script><script src="layers/DDH_Historical_Composites_34.js"></script><script src="layers/DDH_2021_F1F2Mzone_35.js"></script><script src="layers/Composites_36.js"></script><script src="layers/Sulfidesintersections_37.js"></script><script src="layers/Sulfidesinterceptions_38.js"></script><script src="layers/Assays_39.js"></script><script src="layers/Grades_40.js"></script><script src="layers/DDHCollar_41.js"></script><script src="layers/Trace_42.js"></script><script src="layers/Sulfidesinterceptions_43.js"></script><script src="layers/Collar_44.js"></script><script src="layers/Trace_45.js"></script><script src="layers/Sulfidesinterceptions_46.js"></script><script src="layers/Collar_47.js"></script>
+        <script src="styles/Metallicalshowings_6_style.js"></script><script src="styles/Nonmetallicalshowings_7_style.js"></script><script src="styles/Claims_10_style.js"></script><script src="styles/Propertylimits_11_style.js"></script><script src="styles/DDH_Historical_trace_12_style.js"></script><script src="styles/DDH_2021_trace_13_style.js"></script><script src="styles/DDH_2022_trace_14_style.js"></script><script src="styles/DDHCollarHistorical_15_style.js"></script><script src="styles/DDHCollar20212022phase1_16_style.js"></script><script src="styles/DDHCollar2022phase2_17_style.js"></script><script src="styles/2021_DDH_Planned_20211024_18_style.js"></script><script src="styles/2021_DDH_Planned_20211111_19_style.js"></script><script src="styles/2021_DDH_Planned_20221GRAVI_20_style.js"></script><script src="styles/2022_DDH_Planned_20220514Phase2_21_style.js"></script><script src="styles/2022_DDH_Planned_20220514_22_style.js"></script><script src="styles/DDH_Historical_F1F2_23_style.js"></script><script src="styles/DDH_Historical_Composites_24_style.js"></script><script src="styles/DDH_2021_F1F2Mzone_25_style.js"></script><script src="styles/Composites_26_style.js"></script><script src="styles/Sulfidesintersections_27_style.js"></script><script src="styles/2021_DDH_Planned_20211024_28_style.js"></script><script src="styles/2021_DDH_Planned_20211111_29_style.js"></script><script src="styles/2021_DDH_Planned_20221GRAVI_30_style.js"></script><script src="styles/2022_DDH_Planned_20220514Phase2_31_style.js"></script><script src="styles/2022_DDH_Planned_20220514_32_style.js"></script><script src="styles/DDH_Historical_F1F2_33_style.js"></script><script src="styles/DDH_Historical_Composites_34_style.js"></script><script src="styles/DDH_2021_F1F2Mzone_35_style.js"></script><script src="styles/Composites_36_style.js"></script><script src="styles/Sulfidesintersections_37_style.js"></script><script src="styles/Sulfidesinterceptions_38_style.js"></script><script src="styles/Assays_39_style.js"></script><script src="styles/Grades_40_style.js"></script><script src="styles/DDHCollar_41_style.js"></script><script src="styles/Trace_42_style.js"></script><script src="styles/Sulfidesinterceptions_43_style.js"></script><script src="styles/Collar_44_style.js"></script><script src="styles/Trace_45_style.js"></script><script src="styles/Sulfidesinterceptions_46_style.js"></script><script src="styles/Collar_47_style.js"></script>
+        <script src="./layers/layers.js" type="text/javascript"></script> 
+        <script src="./resources/Autolinker.min.js"></script>
+        <script src="./resources/qgis2web.js"></script>
+    </body>
+</html>
