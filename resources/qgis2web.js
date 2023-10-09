@@ -1,5 +1,3 @@
-
-
 var measuring = false;
 var measureControl = (function (Control) {
     measureControl = function(opt_options) {
@@ -69,6 +67,7 @@ var map = new ol.Map({
     overlays: [overlayPopup],
     layers: layersList,
     view: new ol.View({
+        extent: [-7881481.597027, 6390347.111768, -7845486.730735, 6435576.332085], 
          maxZoom: 15, minZoom: 1
     })
 });
@@ -76,7 +75,7 @@ var map = new ol.Map({
 var layerSwitcher = new ol.control.LayerSwitcher({tipLabel: "Layers"});
 map.addControl(layerSwitcher);
 
-map.getView().fit([-20037508.342789, -20037508.342789, 20037508.342789, 20037508.342789], map.getSize());
+map.getView().fit([-7881481.597027, 6390347.111768, -7845486.730735, 6435576.332085], map.getSize());
 
 var NO_POPUP = 0
 var ALL_FIELDS = 1
