@@ -68,7 +68,7 @@ var map = new ol.Map({
     layers: layersList,
     view: new ol.View({
         extent: [-7881481.597027, 6390347.111768, -7845486.730735, 6435576.332085], 
-         maxZoom: 15, minZoom: 1
+         maxZoom: 20, minZoom: 1
     })
 });
 
